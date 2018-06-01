@@ -1,12 +1,11 @@
-package com.springboot.cloud.core.entity;
+package com.springboot.cloud.common.core.entity.po;
 
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Entity implements Serializable {
+public class BasePo {
     private Long id;
     private String createdBy;
     private String updatedBy;

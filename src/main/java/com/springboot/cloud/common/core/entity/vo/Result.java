@@ -1,4 +1,4 @@
-package com.springboot.cloud.core.entity;
+package com.springboot.cloud.common.core.entity.vo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModel;
@@ -56,7 +56,7 @@ public class Result<T> {
      * @return Result
      */
     public static Result success(Object data) {
-        return new Result(SUCCESSFUL_CODE, SUCCESSFUL_MESG, data);
+        return new Result<>(SUCCESSFUL_CODE, SUCCESSFUL_MESG, data);
     }
 
     /**
@@ -84,7 +84,7 @@ public class Result<T> {
      * @return Result
      */
     public static Result fail(Object data) {
-        return new Result(ERROR_CODE, ERROR_MESG, data);
+        return new Result<>(ERROR_CODE, ERROR_MESG, data);
     }
 
     /**
@@ -96,7 +96,7 @@ public class Result<T> {
      * @return Result
      */
     public static Result fail(String code, String mesg, Object data) {
-        return new Result(code, mesg, data);
+        return new Result<>(code, mesg, data);
     }
 
     /**

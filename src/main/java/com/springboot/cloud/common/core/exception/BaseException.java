@@ -1,4 +1,4 @@
-package com.springboot.cloud.core.entity.exception;
+package com.springboot.cloud.common.core.entity.exception;
 
 import lombok.Getter;
 
