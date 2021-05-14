@@ -22,7 +22,7 @@ pom.xml
 ```
 <dependency>
     <groupId>com.springboot.cloud</groupId>
-    <artifactId>core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>comm-core</artifactId>
+    <version>0.0.1</version>
 </dependency>
 ```
