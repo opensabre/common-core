@@ -29,6 +29,7 @@ jobs:
         # 这里用到了其他人写的action脚本，详细可以去看他的文档。
         uses: samuelmeuli/action-maven-publish@v1
         with:
+          server_id: ossrh
           gpg_private_key: ${{ secrets.GPG_SECRET }}
           gpg_passphrase: ${{ secrets.GPG_PASSWORD }}
           nexus_username: ${{ secrets.OSSRH_USER }}
