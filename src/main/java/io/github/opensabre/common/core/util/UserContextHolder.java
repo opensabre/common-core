@@ -1,4 +1,4 @@
-package com.springboot.cloud.common.core.util;
+package io.github.opensabre.common.core.util;
 
 import com.google.common.collect.Maps;
 
@@ -36,7 +36,7 @@ public class UserContextHolder {
     /**
      * 用户上下文中放入信息
      *
-     * @param map
+     * @param map 上下文context参数
      */
     public void setContext(Map<String, String> map) {
         threadLocal.set(map);

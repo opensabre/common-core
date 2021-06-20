@@ -1,4 +1,4 @@
-package com.springboot.cloud.common.core.exception;
+package io.github.opensabre.common.core.exception;
 
 import lombok.Getter;
 

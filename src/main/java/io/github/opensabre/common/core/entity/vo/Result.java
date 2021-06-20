@@ -1,10 +1,10 @@
-package com.springboot.cloud.common.core.entity.vo;
+package io.github.opensabre.common.core.entity.vo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.springboot.cloud.common.core.exception.BaseException;
-import com.springboot.cloud.common.core.exception.ErrorType;
-import com.springboot.cloud.common.core.exception.SystemErrorType;
+import io.github.opensabre.common.core.exception.BaseException;
+import io.github.opensabre.common.core.exception.ErrorType;
+import io.github.opensabre.common.core.exception.SystemErrorType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
@@ -43,8 +43,8 @@ public class Result<T> {
     }
 
     /**
-     * @param errorType
-     * @param data
+     * @param errorType 错误类型
+     * @param data 错误数据
      */
     public Result(ErrorType errorType, T data) {
         this(errorType);
@@ -54,9 +54,9 @@ public class Result<T> {
     /**
      * 内部使用，用于构造成功的结果
      *
-     * @param code
-     * @param mesg
-     * @param data
+     * @param code 错误码
+     * @param mesg 错误信息
+     * @param data 错误数据
      */
     private Result(String code, String mesg, T data) {
         this.code = code;
@@ -68,7 +68,7 @@ public class Result<T> {
     /**
      * 快速创建成功结果并返回结果数据
      *
-     * @param data
+     * @param data 错误数据
      * @return Result
      */
     public static Result success(Object data) {
@@ -96,7 +96,7 @@ public class Result<T> {
     /**
      * 系统异常类没有返回数据
      *
-     * @param baseException
+     * @param baseException 异常类参数
      * @return Result
      */
     public static Result fail(BaseException baseException) {
@@ -106,7 +106,7 @@ public class Result<T> {
     /**
      * 系统异常类并返回结果数据
      *
-     * @param data
+     * @param data 错误数据
      * @return Result
      */
     public static Result fail(BaseException baseException, Object data) {
@@ -116,8 +116,8 @@ public class Result<T> {
     /**
      * 系统异常类并返回结果数据
      *
-     * @param errorType
-     * @param data
+     * @param errorType 错误类型
+     * @param data 错误数据
      * @return Result
      */
     public static Result fail(ErrorType errorType, Object data) {
@@ -127,7 +127,7 @@ public class Result<T> {
     /**
      * 系统异常类并返回结果数据
      *
-     * @param errorType
+     * @param errorType 错误类型
      * @return Result
      */
     public static Result fail(ErrorType errorType) {
@@ -137,7 +137,7 @@ public class Result<T> {
     /**
      * 系统异常类并返回结果数据
      *
-     * @param data
+     * @param data 错误数据
      * @return Result
      */
     public static Result fail(Object data) {
