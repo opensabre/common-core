@@ -21,8 +21,8 @@ pom.xml
 
 ```
 <dependency>
-    <groupId>com.springboot.cloud</groupId>
-    <artifactId>comm-core</artifactId>
+    <groupId>io.github.opensabre</groupId>
+    <artifactId>common-core</artifactId>
     <version>0.0.1</version>
 </dependency>
 ```
