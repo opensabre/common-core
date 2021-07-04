@@ -4,14 +4,14 @@ public interface ErrorType {
     /**
      * 返回code
      *
-     * @return
+     * @return 错误code
      */
     String getCode();
 
     /**
      * 返回mesg
      *
-     * @return
+     * @return 错误信息
      */
     String getMesg();
 }

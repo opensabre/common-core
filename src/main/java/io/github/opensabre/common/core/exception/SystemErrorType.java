@@ -21,11 +21,11 @@ public enum SystemErrorType implements ErrorType {
     /**
      * 错误类型码
      */
-    private String code;
+    private final String code;
     /**
      * 错误类型描述信息
      */
-    private String mesg;
+    private final String mesg;
 
     SystemErrorType(String code, String mesg) {
         this.code = code;

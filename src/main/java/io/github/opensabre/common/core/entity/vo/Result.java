@@ -34,7 +34,7 @@ public class Result<T> {
     }
 
     /**
-     * @param errorType
+     * @param errorType 错误类型
      */
     public Result(ErrorType errorType) {
         this.code = errorType.getCode();
